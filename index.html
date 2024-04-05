@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/style.css">
+    <title>Photo Gallery</title>
+</head>
+<body>
+    <header>
+        <h1>Photo Gallery</h1>
+        <div class="dropdown">
+            <button onclick="dropFunction()" class="dropbtn">Filter</button>
+            <div id="myDropdown" class="dropdown-content">
+              <a href="#" class="btn active" onclick="filterSelection('all')">Show All</a>
+              <a href="#" class="btn" onclick="filterSelection('Space')">Space</a>
+              <a href="#" class="btn" onclick="filterSelection('Nature')">Nature</a>
+              <a href="#" class="btn" onclick="filterSelection('Ocean')">Ocean</a>
+            </div>
+          </div>
+    </header>
+
+    <div class="container">
+        <div id="stack1">
+            <img class="filterDiv Space" id="space1" src="./styles/images/space1.png" alt="">
+            <img class="filterDiv Space" id="space2" src="./styles/images/space2.png" alt="">
+            <img class="filterDiv Space" id="space3" src="./styles/images/space3.png" alt="">
+        </div>
+        <div id="stack2">
+            <img class="filterDiv Nature" id="nature1" src="./styles/images/nature1.png" alt="">
+            <img class="filterDiv Nature" id="nature2" src="./styles/images/nature2.png" alt="">
+            <img class="filterDiv Nature" id="nature3" src="./styles/images/nature3.png" alt="">
+        </div>
+        <div id="stack3">
+            <img class="filterDiv Ocean" id="ocean1" src="./styles/images/ocean1.png" alt="">
+            <img class="filterDiv Ocean" id="ocean2" src="./styles/images/ocean2.png" alt="">
+            <img class="filterDiv Ocean" id="ocean3" src="./styles/images/ocean3.png" alt="">
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
