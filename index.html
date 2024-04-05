@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Photo Gallery</title>
+</head>
+<body>
+    <header>
+        <h1>Photo Gallery</h1>
+        <div class="dropdown">
+            <button class="dropbtn">Filter</button>
+            <div class="dropdown-content">
+                <a href="#" data-filter="all">Show All</a>
+                <a href="#" data-filter="Space">Galaxy</a>
+                <a href="#" data-filter="Nature">Animals</a>
+                <a href="#" data-filter="Ocean">Trees</a>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="gallery">
+            <div class="item Space"><img src="style/images/galaxy1.jpg" alt=""></div>
+            <div class="item Space"><img src="style/images/galaxy2.jpg" alt=""></div>
+            <div class="item Space"><img src="style/images/galaxy3.jpg" alt=""></div>
+            <div class="item Nature"><img src="style/images/animal1.jpg" alt=""></div>
+            <div class="item Nature"><img src="style/images/animal2.jpg" alt=""></div>
+            <div class="item Nature"><img src="style/images/animal3.jpg" alt=""></div>
+            <div class="item Ocean"><img src="style/images/tree1.jpg" alt=""></div>
+            <div class="item Ocean"><img src="style/images/tree2.jpg" alt=""></div>
+            <div class="item Ocean"><img src="style/images/tree3.jpg" alt=""></div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
